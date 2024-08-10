@@ -1,6 +1,8 @@
-package org.example.command;
+package org.example.command.receiver.light;
 
-public class LightOnCommand implements Command{
+import org.example.command.Command;
+
+public class LightOnCommand implements Command {
     Light light;
 
     public LightOnCommand(Light light) {
