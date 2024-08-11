@@ -15,16 +15,19 @@ public class CeilingFan {
 
     public void high(){
         speed = HIGH;
+        System.out.println(location + " ceiling fan speed's been set HIGH");
         // 선풍기 속도를 HIGH로 맞추는 코드
     }
 
     public void medium(){
         speed = MEDIUM;
+        System.out.println(location + " ceiling fan speed's been set MEDIUM");
         // 선풍기 속도를 MEDIUM으로 맞추는 코드
     }
 
     public void low(){
         speed = LOW;
+        System.out.println(location + " ceiling fan speed's been set LOW");
         // 선풍기 속도를 LOW로 맞추는 코드
     }
 

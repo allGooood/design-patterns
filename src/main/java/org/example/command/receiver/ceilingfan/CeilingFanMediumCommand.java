@@ -2,18 +2,18 @@ package org.example.command.receiver.ceilingfan;
 
 import org.example.command.Command;
 
-public class CeilingFanOffCommand implements Command {
+public class CeilingFanMediumCommand implements Command {
     CeilingFan ceilingFan;
     int prevSpeed;
 
-    public CeilingFanOffCommand(CeilingFan ceilingFan) {
+    public CeilingFanMediumCommand(CeilingFan ceilingFan) {
         this.ceilingFan = ceilingFan;
     }
 
     @Override
     public void execute() {
         prevSpeed = ceilingFan.getSpeed();
-        ceilingFan.off();
+        ceilingFan.medium();
     }
 
     @Override
@@ -24,6 +24,8 @@ public class CeilingFanOffCommand implements Command {
             ceilingFan.medium();
         }else if(prevSpeed == CeilingFan.LOW){
             ceilingFan.low();
+        }else if(prevSpeed == CeilingFan.OFF){
+            ceilingFan.off();
         }
     }
 }
