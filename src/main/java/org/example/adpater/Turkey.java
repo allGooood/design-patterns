@@ -1,0 +1,6 @@
+package org.example.adpater;
+
+public interface Turkey {
+    public void gobble();
+    public void fly();
+}
